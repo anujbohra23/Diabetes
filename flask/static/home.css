@@ -1,0 +1,124 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+#dib1 {
+  background-image: url("istockphoto-1250141820-612x612.jpg");
+  background-repeat: no-repeat;
+  background-color: white;
+}
+#text1 {
+  display: inline;
+  left: 50%;
+  font-family: "Hind Madurai", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  word-spacing: 1px;
+}
+.cont {
+  height: 50%;
+  width: 800px;
+  /* display: flex; */
+  margin-left: 43%;
+  /* position: ; */
+}
+
+#head1 {
+  margin-bottom: 20px;
+  color: rgb(127, 161, 191);
+  font-weight: 400;
+}
+
+#but1 {
+  color: white;
+  margin-top: 20px;
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+
+#but1:hover {
+  color: black;
+  background-color: white;
+  transform: scale(0.8);
+}
+
+#but10 {
+  color: white;
+  margin-top: 20px;
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+
+#but10:hover {
+  color: black;
+  background-color: white;
+  transform: scale(0.8);
+}
+
+#navbar_head {
+  justify-content: center;
+}
+
+#but2 {
+  color: white;
+  margin-top: 20px;
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+
+#but2:hover {
+  color: black;
+  background-color: white;
+  transform: scale(0.8);
+}
+
+.cardbg {
+  transition: all 0.5s;
+}
+
+.cardbg:hover {
+  transform: scale(1.1);
+  overflow: hidden;
+}
+
+.colourbg {
+  background-image: url("./aboutus.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: fixed;
+}
+
+#jb2 {
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+  /* border: 1px solid black; */
+}
+
+.carddesign {
+  border: 1px black solid;
+  background-color: #f6f6f6;
+}
+
+#navbar_head {
+  /* text-align: center; */
+  position: absolute;
+  /* justify-items: center; */
+  /* text-align: center; */
+  margin-left: 43%;
+}
+
+.bgcol {
+  background-color: #1c1a2a;
+  font-family: "Times New Roman", Times, serif;
+  font-size: large;
+}
+
+li {
+  transition: all 0.2s;
+}
+li:hover {
+  border: 1px solid white;
+  border-radius: 10px;
+  transform: scale(0.9);
+}

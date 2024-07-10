@@ -1,0 +1,1 @@
+{"trial_id": "0", "hyperparameters": {"space": [{"class_name": "Choice", "config": {"name": "optimizer", "default": "adam", "conditions": [], "values": ["adam", "sgd", "rmsprop", "adadelta", "Adagrad", "Adamax", "Nadam", "Ftrl"], "ordered": false}}], "values": {"optimizer": "adam"}}, "metrics": {"metrics": {}}, "score": null, "best_step": 0, "status": "RUNNING", "message": null}

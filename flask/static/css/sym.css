@@ -1,0 +1,51 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#navbar_head {
+  position: absolute;
+  margin-left: 43%;
+}
+
+.bgcol {
+  background-color: #1c1a2a;
+  font-family: "Times New Roman", Times, serif;
+  font-size: large;
+}
+
+li {
+  transition: all 0.2s;
+}
+li:hover {
+  border: 1px solid white;
+  border-radius: 10px;
+  transform: scale(0.9);
+}
+
+#jumbo1 {
+  font-family: "Roboto Flex", sans-serif;
+  background-color: aliceblue;
+}
+
+.symp {
+  width: 50%;
+  /* height: 70%; */
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 0%;
+}
+#symp1 {
+  background-image: url("/static/symptoms.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#symp2 {
+  font-family: "Roboto Flex", sans-serif;
+  background-color: aliceblue;
+}
+#list1 {
+  position: relative;
+  list-style-type: circle;
+}

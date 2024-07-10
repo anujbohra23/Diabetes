@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Diabetes prediction | Home</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="/static/contactus.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/home.css" />
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/4.5/examples/carousel/"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Yanone+Kaffeesatz:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        padding-top: 3.5rem;
+      }
+
+      nav {
+        font-family: sans-serif;
+      }
+
+      .navbar-brand {
+        font-size: 20px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+
+      .alert {
+        padding: 20px;
+        background-color: #04aa6d;
+        color: white;
+      }
+
+      .closebtn {
+        margin-left: 15px;
+        color: white;
+        font-weight: bold;
+        float: right;
+        font-size: 22px;
+        line-height: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .closebtn:hover {
+        color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form id="form1">
+      <header>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bgcol">
+          <ul class="navbar-nav ml-auto d-flex justify-content-start">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/index">Predictor </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/symp">Symptoms </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/fact">FAQs </a>
+            </li>
+          </ul>
+
+          <a
+            class="navbar-brand d-flex justify-content-center"
+            href="#"
+            id="navbar_head"
+            ><b>Diabetes Detection </b></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#jb2">About Us</a>
+              </li>
+
+              <!-- <li class="nav-item">
+              <a class="nav-link" href="/signup">Sign Up</a>
+            </li> -->
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <main role="main">
+        <div class="jumbotron" id="dib1">
+          <div class="cont">
+            <h1 class="display-4" id="head1">Diabetes</h1>
+            <p id="text1">
+              The International Diabetes Federation (IDF) estimates that as many
+              as 212 million people, or half of all adults currently living with
+              diabetes, are undiagnosed. Most of these have type 2 diabetes. we
+              have created an online diabetes risk assessment which aims to
+              predict an individual’s risk of developing type 2 diabetes within
+              the next ten years. The test takes only a couple of minutes to
+              complete. It is a quick, easy, and confidential way to find out
+              your risk of developing type 2 diabetes.
+            </p>
+            <p>
+              <a
+                class="btn-lg btn btn-dark"
+                id="but1"
+                onclick="window.location.href='/index'"
+                ;
+                role="button"
+                >TEST &raquo;</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="container my-4">
+            <div class="row mb-2">
+              <div class="col-md-6 cardbg">
+                <div
+                  class="card flex-md-row mb-4 box-shadow h-md-250 carddesign"
+                >
+                  <div class="card-body d-flex flex-column align-items-start">
+                    <h3 class="mb-0">
+                      <a class="text-dark" href="#">SYMPTOMS</a>
+                    </h3>
+                    <br />
+                    <p class="card-text mb-auto">
+                      Diabetes can manifest with various symptoms, though it's
+                      important to note that some individuals may not experience
+                      any symptoms, especially in the early stages. Click below
+                      to know more.
+                    </p>
+                    <a
+                      class="btn-lg btn btn-dark"
+                      role="button"
+                      href="/symp"
+                      id="but2"
+                      >Know More</a
+                    >
+                  </div>
+                  <img
+                    class="card-img-right flex-auto d-none d-md-block"
+                    data-src="holder.js/200x250?theme=thumb"
+                    alt="Thumbnail [200x250]"
+                    style="width: 200px; height: 250px"
+                    src="static/symptoms.jpeg"
+                    data-holder-rendered="true"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6 cardbg">
+                <div
+                  class="card flex-md-row mb-4 box-shadow h-md-250 carddesign"
+                >
+                  <div class="card-body d-flex flex-column align-items-start">
+                    <h3 class="mb-0">
+                      <a class="text-dark" href="/fact">FAQs</a>
+                    </h3>
+                    <br />
+                    <p class="card-text mb-auto">
+                      Quickly find answers to common questions with our FAQ
+                      card.Learn how it works, its accuracy, privacy measures,
+                      and how to interpret results. Click below to read
+                      Frequently asked questions.
+                    </p>
+                    <a
+                      class="btn-lg btn btn-dark"
+                      role="button"
+                      href="/fact"
+                      id="but2"
+                      >Know More</a
+                    >
+                  </div>
+                  <img
+                    class="card-img-right flex-auto d-none d-md-block"
+                    data-src="holder.js/200x250?theme=thumb"
+                    alt="Thumbnail [200x250]"
+                    src="static/faq.jpeg"
+                    data-holder-rendered="true"
+                    style="width: 200px; height: 310px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr />
+        </div>
+
+        <div class="jumbotron colourbg" id="jb2">
+          <h1 class="display-4" id="jb2">About Us</h1>
+          <p class="lead" id="jb2">
+            Discover your diabetes risk early with our easy-to-use prediction
+            website. Get personalized assessments using advanced technology.
+            Take charge of your health and stay ahead of potential risks. Visit
+            us today for peace of mind and proactive care.
+          </p>
+          <hr class="my-4" />
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+              <small id="emailHelp" class="form-text text-muted"
+                >We'll never share your email with anyone else.</small
+              >
+            </div>
+            <div class="form-group form-check"></div>
+            <p></p>
+            <a
+              class="btn btn-dark btn-lg"
+              id="but10"
+              href="#jb2"
+              role="button"
+              onclick="showAlert()"
+              >Contact Us</a
+            >
+          </form>
+        </div>
+
+        <div class="alert" id="alert" style="display: none">
+          <span class="closebtn" onclick="hideAlert()">&times;</span>
+          <strong>Success!</strong> "Thanks for Subscribing! Stay tuned for
+          updates."
+        </div>
+        <footer class="mastfoot mt-auto">
+          <div class="inner">
+            <p style="text-align: center">
+              &copy; Diabetes. All Rights Reserved
+            </p>
+          </div>
+        </footer>
+      </main>
+      <script
+        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"
+      ></script>
+      <script>
+        window.jQuery ||
+          document.write(
+            '<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>'
+          );
+      </script>
+      <script src="../assets/dist/js/bootstrap.bundle.js"></script>
+
+      <script>
+        function showAlert() {
+          document.getElementById("alert").style.display = "block";
+        }
+
+        function hideAlert() {
+          document.getElementById("alert").style.display = "none";
+        }
+      </script>
+    </form>
+  </body>
+</html>

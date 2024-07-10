@@ -1,0 +1,99 @@
+#navbar_head {
+  position: absolute;
+  margin-left: 43%;
+}
+
+.bgcol {
+  background-color: #1c1a2a;
+  font-family: "Times New Roman", Times, serif;
+  font-size: large;
+}
+
+li {
+  transition: all 0.2s;
+}
+li:hover {
+  border: 1px solid white;
+  border-radius: 10px;
+  transform: scale(0.9);
+}
+
+#jumbo1 {
+  font-family: "Roboto Flex", sans-serif;
+  background-color: aliceblue;
+}
+
+.symp {
+  width: 50%;
+  /* height: 70%; */
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 0%;
+}
+#symp1 {
+  background-image: url("/static/checkup.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#symp2 {
+  font-family: "Roboto Flex", sans-serif;
+  background-color: aliceblue;
+}
+
+form {
+  /* padding-top: 10px; */
+  justify-content: center;
+}
+
+fieldset h1 {
+  color: #5a5a5a;
+  padding-bottom: 20px;
+  margin-left: 15px;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 28px;
+  text-align: center;
+}
+
+fieldset label {
+  padding: 20px;
+  font-size: 20px;
+  display: inline-block;
+  width: 280px;
+}
+
+fieldset input {
+  padding: 8px;
+  color: #938c8c;
+}
+
+fieldset input:focus {
+  color: #000;
+}
+
+.fieldset {
+  margin-top: 3%;
+  margin-left: 0%;
+  margin-right: 0%;
+  padding: 30px;
+  border-width: 25px;
+  border-style: ridge;
+  border-color: #257a7a;
+  box-shadow: 6px 13px 13px 0px black;
+  background-color: #ebfffa;
+}
+
+#but1 {
+  color: white;
+  margin-top: 20px;
+  margin-left: 18%;
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+
+#but1:hover {
+  color: black;
+  background-color: white;
+  transform: scale(0.8);
+}
