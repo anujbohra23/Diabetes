@@ -12,18 +12,24 @@
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
-      crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/static/css/FAQs.css" />
+    <link rel="stylesheet" href="/static/css/Faq.css" />
     <title>FAQs</title>
-    <script src="/static/FAQs.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
       rel="stylesheet"
     />
+    <style>
+      .qa-container {
+        margin: 20px 0;
+      }
+      .answer {
+        display: none;
+        margin-top: 10px;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -33,11 +39,9 @@
           <li class="nav-item">
             <a class="nav-link" href="/">Home</a>
           </li>
-
           <li class="nav-item">
-            <a class="nav-link" href="/index" methodS="POST">Predictor </a>
+            <a class="nav-link" href="/index">Predictor </a>
           </li>
-
           <li class="nav-item">
             <a class="nav-link" href="/symp">Symptoms </a>
           </li>
@@ -45,7 +49,6 @@
             <a class="nav-link" href="/fact">FAQs </a>
           </li>
         </ul>
-
         <a
           class="navbar-brand d-flex justify-content-center"
           href="#"
@@ -68,10 +71,6 @@
             <li class="nav-item">
               <a class="nav-link" href="#jb2">About Us</a>
             </li>
-
-            <!-- <li class="nav-item">
-          <a class="nav-link" href="/signup">Sign Up</a>
-        </li> -->
           </ul>
         </div>
       </nav>
@@ -92,118 +91,81 @@
     </div>
 
     <div class="container ansbox">
+      <!-- Section for Static FAQ Questions -->
       <div class="faq">
-        <p>1. What is diabetes?</p>
-        <button onclick="toggleAnswer('answer1')">Click here for answer</button>
-        <p id="answer1" class="answer">
-          Diabetes is a chronic condition characterized by elevated levels of
-          blood sugar (glucose) due to the body's inability to produce enough
-          insulin or effectively use the insulin it produces.
-        </p>
-        <hr />
+        <h3 onclick="toggleAnswer('answer1')">What is diabetes?</h3>
+        <div id="answer1" class="answer">
+          <p>
+            Diabetes is a chronic condition characterized by elevated levels of
+            blood sugar (glucose) due to the body's inability to produce enough
+            insulin or effectively use the insulin it produces.
+          </p>
+        </div>
+        <h3 onclick="toggleAnswer('answer2')">
+          What are the types of diabetes?
+        </h3>
+        <div id="answer2" class="answer">
+          <p>
+            The main types of diabetes include type 1 diabetes, type 2 diabetes,
+            and gestational diabetes.
+          </p>
+        </div>
+        <!-- Additional static FAQs can be added here -->
+      </div>
 
-        <p>2. What are the different types of diabetes?</p>
-        <button onclick="toggleAnswer('answer2')">Click here for answer</button>
-        <p id="answer2" class="answer">
-          The main types of diabetes include type 1 diabetes, type 2 diabetes,
-          and gestational diabetes. Type 1 diabetes is an autoimmune condition
-          where the body doesn't produce insulin. Type 2 diabetes occurs when
-          the body becomes resistant to insulin or doesn't produce enough
-          insulin. Gestational diabetes develops during pregnancy.
-        </p>
-        <hr />
-
-        <p>3. What are the symptoms of diabetes?</p>
-        <button onclick="toggleAnswer('answer3')">Click here for answer</button>
-        <p id="answer3" class="answer">
-          Common symptoms of diabetes include increased thirst, frequent
-          urination, extreme hunger, unexplained weight loss, fatigue, blurred
-          vision, and slow-healing sores or frequent infections.
-        </p>
-        <hr />
-
-        <p>4. How is diabetes diagnosed?</p>
-        <button onclick="toggleAnswer('answer4')">Click here for answer</button>
-        <p id="answer4" class="answer">
-          Diabetes is diagnosed through blood tests that measure blood sugar
-          levels. These tests include fasting blood sugar test, oral glucose
-          tolerance test, and A1C test.
-        </p>
-        <hr />
-
-        <p>5. What are the risk factors for diabetes?</p>
-        <button onclick="toggleAnswer('answer5')">Click here for answer</button>
-        <p id="answer5" class="answer">
-          Risk factors for diabetes include obesity, physical inactivity, family
-          history of diabetes, age, race, gestational diabetes, polycystic ovary
-          syndrome (PCOS), and high blood pressure.
-        </p>
-        <hr />
-
-        <p>6. How is diabetes treated?</p>
-        <button onclick="toggleAnswer('answer6')">Click here for answer</button>
-        <p id="answer6" class="answer">
-          Treatment for diabetes typically involves lifestyle changes such as
-          maintaining a healthy diet, regular exercise, monitoring blood sugar
-          levels, and taking medications as prescribed. For type 1 diabetes,
-          insulin therapy is essential. Type 2 diabetes may also require oral
-          medications or insulin injections.
-        </p>
-        <hr />
-
-        <p>7. What are the complications of diabetes?</p>
-        <button onclick="toggleAnswer('answer7')">Click here for answer</button>
-        <p id="answer7" class="answer">
-          Diabetes can lead to various complications if left untreated or poorly
-          managed. These complications include heart disease, stroke, neuropathy
-          (nerve damage), kidney disease, eye damage (retinopathy), foot
-          problems, skin conditions, and dental problems.
-        </p>
-        <hr />
-
-        <p>4. How is diabetes diagnosed?</p>
-        <button onclick="toggleAnswer('answer3')">Click here for answer</button>
-        <p id="answer3" class="answer">
-          Diabetes is diagnosed through blood tests that measure blood sugar
-          levels. These tests include fasting blood sugar test, oral glucose
-          tolerance test, and A1C test.
-        </p>
-        <hr />
-
-        <p>8. How can diabetes be prevented?</p>
-        <button onclick="toggleAnswer('answer8')">Click here for answer</button>
-        <p id="answer8" class="answer">
-          Diabetes prevention involves adopting a healthy lifestyle, including
-          eating a balanced diet, maintaining a healthy weight, staying
-          physically active, and avoiding tobacco use. Regular screening for
-          diabetes and prediabetes is also important for early detection and
-          intervention.
-        </p>
-        <hr />
-
-        <p>9. Can diabetes be cured?</p>
-        <button onclick="toggleAnswer('answer9')">Click here for answer</button>
-        <p id="answer9" class="answer">
-          While there is no cure for diabetes, it can be managed effectively
-          through proper treatment and lifestyle modifications. With appropriate
-          management, many people with diabetes can live healthy and fulfilling
-          lives.
-        </p>
-        <hr />
-
-        <p>
-          10. What support resources are available for people with diabetes?
-        </p>
-        <button onclick="toggleAnswer('answer10')">
-          Click here for answer
+      <!-- Dynamic Question-Answer Section -->
+      <div class="qa-container">
+        <label for="questionInput">Ask a question about diabetes:</label>
+        <input
+          type="text"
+          id="questionInput"
+          class="form-control"
+          placeholder="Type your question here..."
+        />
+        <button class="btn btn-primary mt-2" onclick="askQuestion()">
+          Get Answer
         </button>
-        <p id="answer10" class="answer">
-          Various support resources are available for people with diabetes,
-          including diabetes education programs, support groups, online
-          communities, and healthcare professionals specializing in diabetes
-          care. These resources can provide valuable information, support, and
-          guidance for managing diabetes effectively.
-        </p>
+        <div id="qaResult" class="answer alert alert-info mt-3"></div>
+      </div>
+
+      <!-- Example Context -->
+      <div id="context" style="display: none">
+        Diabetes is a chronic condition characterized by elevated levels of
+        blood sugar (glucose) due to the body's inability to produce enough
+        insulin or effectively use the insulin it produces. The main types of
+        diabetes include type 1 diabetes, type 2 diabetes, and gestational
+        diabetes. Type 1 diabetes is an autoimmune condition where the body
+        doesn't produce insulin. Type 2 diabetes occurs when the body becomes
+        resistant to insulin or doesn't produce enough insulin. Gestational
+        diabetes develops during pregnancy. Common symptoms of diabetes include
+        increased thirst, frequent urination, extreme hunger, unexplained weight
+        loss, fatigue, blurred vision, and slow-healing sores or frequent
+        infections. Diabetes is diagnosed through blood tests that measure blood
+        sugar levels. These tests include fasting blood sugar test, oral glucose
+        tolerance test, and A1C test. Risk factors for diabetes include obesity,
+        physical inactivity, family history of diabetes, age, race, gestational
+        diabetes, polycystic ovary syndrome (PCOS), and high blood pressure.
+        Treatment for diabetes typically involves lifestyle changes such as
+        maintaining a healthy diet, regular exercise, monitoring blood sugar
+        levels, and taking medications as prescribed. For type 1 diabetes,
+        insulin therapy is essential. Type 2 diabetes may also require oral
+        medications or insulin injections. Diabetes can lead to various
+        complications if left untreated or poorly managed. These complications
+        include heart disease, stroke, neuropathy (nerve damage), kidney
+        disease, eye damage (retinopathy), foot problems, skin conditions, and
+        dental problems. Diabetes prevention involves adopting a healthy
+        lifestyle, including eating a balanced diet, maintaining a healthy
+        weight, staying physically active, and avoiding tobacco use. Regular
+        screening for diabetes and prediabetes is also important for early
+        detection and intervention. While there is no cure for diabetes, it can
+        be managed effectively through proper treatment and lifestyle
+        modifications. With appropriate management, many people with diabetes
+        can live healthy and fulfilling lives. Various support resources are
+        available for people with diabetes, including diabetes education
+        programs, support groups, online communities, and healthcare
+        professionals specializing in diabetes care. These resources can provide
+        valuable information, support, and guidance for managing diabetes
+        effectively.
       </div>
     </div>
 
@@ -212,25 +174,11 @@
         <p style="text-align: center">&copy; Diabetes. All Rights Reserved</p>
       </div>
     </footer>
-    <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
-    -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/Faqs.js"></script>
   </body>
 </html>
